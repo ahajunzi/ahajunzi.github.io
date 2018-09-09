@@ -1,6 +1,6 @@
 # 言语系列之始
 blogs of study and reading
-### [click here to central catalog](ahajunzi.github.io/web_building/.idea/index.html)
+### [click here to central catalog](ahajunzi.github.io/web_building/index.html)
 
         申时三刻，梦中惊醒。
         又是千思万绪，内心的沉着，莫名的悲悯，仿若游荡亿年，又仿若懵懂新生。
