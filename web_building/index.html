@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LULU brain's blogging</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+            font-size: 20px;
+            font-family: Algerian;
+            
+            
+            
+        }
+
+        a{
+            text-decoration:none;
+            color: black;
+        }
+        a:hover{
+            text-shadow: 0px 0px 5px blueviolet;
+
+        }
+        a:active{
+            color: aqua;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+
+        .main{
+            width:500px;
+            height:800px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            margin: 0 ;
+            margin-top:15px;
+
+        }
+        #titleCard{
+            border-top: none;
+            width: 500px;
+            height: 30px;
+            text-align: center;
+        }
+
+        #titleCard li{
+            display: inline-block;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            margin-left: 5px;
+        }
+        #titleCard li.liActive{
+            border-top:  3px solid blueviolet  ;
+            text-shadow:0px 0px 5px blueviolet;
+        }
+        #titleCard li:hover{
+            cursor: pointer;
+        }
+        #content div{
+            width: 500px;
+            height: 700px;
+            position:absolute;
+            top:350px;
+            left: 30px;
+        }
+
+        #content div ol li{
+            line-height: 2em;
+            text-indent: 8px;
+        }
+        .show{
+            display: block;
+        }
+        .hide{
+            display: none;
+        }
+
+        #want{
+            height: 100% ;
+        width:100%;
+        opacity: 0.4;
+
+ }
+
+
+        #doge{
+            width: 40px;
+            height: 40px;
+        }
+        #title1{
+            font-size: 80px;
+            font-family: "Bell MT";
+        }
+        #title2{
+            font-family: "Agency FB";
+            font-size: 40px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function () {
+            var titleCardChildren=document.getElementById("titleCard").children;
+            var contentChildren=document.getElementById("content").children;
+            for(var i=0;i<titleCardChildren.length;i++){
+                titleCardChildren[i].index=i;
+                titleCardChildren[i].onclick=function(){
+                    for(var j=0;j<contentChildren.length;j++){
+                        contentChildren[j].className="hide";
+                        titleCardChildren[j].className=""
+                    }
+                    contentChildren[this.index].className="show";
+                    titleCardChildren[this.index].className="liActive";
+                }
+            }
+        };
+        function jumppic() {
+            alert("Congratulations for finding this but ...there is nothing...> w *");
+            alert("really nothing...");
+            var box1=document.getElementById("want");
+
+            var pic1=document.createElement("img");
+            pic1.id="jiudi";
+            pic1.src="jiudi.gif";
+            pic1.style="width:500px; height:auto; position:fixed; left:600px; ; "
+            document.body.insertBefore(pic1,box1);
+            alert("ok,nothing ~just for fun aha");
+            alert("could anybody tell me how to hidden this pic?...");
+
+
+
+
+
+        }
+
+
+
+
+    </script>
+
+</head>
+<body >
+    <img id="want" src="pic1.jpg" >
+    <div class="main" id="main">
+        <p id="title1">Welcome to LULU's blog  </p>
+        <br/>
+        <br/>
+        <p id="title2">
+            Extremely concise web-page <img id="doge" src="timg%20(1).jpg"><a onclick="jumppic()"   >...</a>
+        </p>
+        <ul id="titleCard">
+            <li class="liActive">狂捅cs之路</li>
+            <li class="liActive"> 自由意志之歌</li>
+            <li class="liActive"> 生活若干</li>
+
+
+        </ul>
+        <div id="content">
+            <div class="show">
+                <ol>
+                    <li>
+                        <a href="#">先占个位置XD </a>
+                    </li>
+                </ol>
+            </div>            <div class="hide">
+            <ol>
+                <li>
+                    <a href="http://ahajunzi.github.io/web_building/articles/article-1/ar-11">轻掘玄学/宗教本质（1）</a>
+                </li> <li>
+                <a href="http://ahajunzi.github.io/web_building/articles/article-1/ar-12">轻掘玄学/宗教本质（2）</a>
+
+            </li>
+            </ol>
+        </div>            <div class="hide">
+            <ol>
+                <li>
+                    <a href="http://ahajunzi.github.io/web_building/articles/article-3/ar-31">六一杂诗作<——  <——</a>
+
+                </li>
+            </ol>
+        </div>
+        </div>
+        <audio controls="controls" autoplay="autoplay" style="width: 400px;height: 30px; position: absolute; top: 800px; "  loop="loop" preload="auto">
+
+            <source src="articles/松枝賀子%20-%20久远%20-光と波の记忆-.mp3"/>
+        </audio>
+        <br/>
+    </div>
+
+<br/>
+
+
+</body>
+</html>
