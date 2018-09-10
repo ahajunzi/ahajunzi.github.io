@@ -1,4 +1,4 @@
-# 言语系列之始
+# 言于系列之始
 blogs of study and reading
 ### [click here to central catalog](https://ahajunzi.github.io/web_building/index.html)
 
